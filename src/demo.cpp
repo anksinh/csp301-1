@@ -3,14 +3,19 @@
 // Author      : Abhimanyu Dubey
 // Version     :
 // Copyright   : © 2013
-// Description : Hello World in C++, Ansi-style
+// Description : Demo application for testing GLUT on Eclipse
 //============================================================================
 
 #include <iostream>
 using namespace std;
 #include <stdlib.h>
 
+#ifdef __APPLE__
 #include <GLUT/glut.h>
+#else
+#include <GL/gl.h>
+#endif
+
 #define window_width  640
 #define window_height 480
 void main_loop_function() {
